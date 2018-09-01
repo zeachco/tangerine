@@ -1,3 +1,4 @@
+```
  _____                           _            
 |_   _|                         (_)           
   | | __ _ _ __   __ _  ___ _ __ _ _ __   ___ 
@@ -6,6 +7,7 @@
   \_/\__,_|_| |_|\__, |\___|_|  |_|_| |_|\___|
                   __/ |                       
                  |___/                        
+```
 
 API and scraper for the Tangerine Bank, based off of the Python version by kevinjqiu https://github.com/kevinjqiu/tangerine/
 
