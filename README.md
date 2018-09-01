@@ -29,7 +29,7 @@ Authentication
 Currently only authentication method is by passing an object with the needed login values or a string to a JSON file which contains the files.
 
 ```JavaScript
-const Tangerine = require('Tangerine');
+const Tangerine = require('tangerine-bank');
 
 Tangerine.login('login.json').then(result => {
 	console.log(result);
@@ -40,7 +40,7 @@ List Accounts
 -------------
 
 ```JavaScript
-const Tangerine = require('Tangerine');
+const Tangerine = require('tangerine-bank');
 
 Tangerine.login('login.json').then(result => {
 	Tangerine.list_accounts().then(result => {
