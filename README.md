@@ -15,7 +15,7 @@ API and scraper for the Tangerine Bank, based off of the Python version by kevin
 Install
 =======
 
-    npm install tangerine --save
+    npm install tangerine-bank --save
 
 
 Usage
