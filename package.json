@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --target node ./example/index.ts",
+    "build": "parcel build --target node ./example/index.ts"
   },
   "author": "marcusds",
   "license": "MIT",
@@ -15,7 +17,12 @@
     "strftime": "^0.10.0"
   },
   "repository": {
-	"type": "git",
-	"url": "https://github.com/marcusds/tangerine.git"
+    "type": "git",
+    "url": "https://github.com/marcusds/tangerine.git"
+  },
+  "devDependencies": {
+    "@types/parcel-env": "^0.0.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
   }
 }

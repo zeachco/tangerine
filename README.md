@@ -1,30 +1,27 @@
 ```
- _____                           _            
-|_   _|                         (_)           
-  | | __ _ _ __   __ _  ___ _ __ _ _ __   ___ 
+ _____                           _
+|_   _|                         (_)
+  | | __ _ _ __   __ _  ___ _ __ _ _ __   ___
   | |/ _` | '_ \ / _` |/ _ \ '__| | '_ \ / _ \
   | | (_| | | | | (_| |  __/ |  | | | | |  __/
   \_/\__,_|_| |_|\__, |\___|_|  |_|_| |_|\___|
-                  __/ |                       
-                 |___/                        
+                  __/ |
+                 |___/
 ```
 
 API and scraper for the Tangerine Bank, based off of the Python version by kevinjqiu https://github.com/kevinjqiu/tangerine/
 
+# Install
 
-Install
-=======
+```shell
+npm install tangerine-bank --save
+```
 
-    npm install tangerine-bank --save
-
-
-Usage
-=====
+# Usage
 
 This module is still under development. Most methods from the Python version have been rewritten to JavaScript, but only login and list accounts has been tested.
 
-Authentication
---------------
+## Authentication
 
 Currently only authentication method is by passing an object with the needed login values or a string to a JSON file which contains the files.
 
@@ -36,8 +33,7 @@ Tangerine.login('login.json').then(result => {
 });
 ```
 
-List Accounts
--------------
+## List Accounts
 
 ```JavaScript
 const Tangerine = require('tangerine-bank');
@@ -49,14 +45,21 @@ Tangerine.login('login.json').then(result => {
 });
 ```
 
+## login.json
 
-Contribution
-============
+```json
+{
+  "username": "",
+  "pin": "",
+  "phrase": "",
+  "questions": {}
+}
+```
+
+# Contribution
 
 There is still a lot to do to make this module ship shape. Please feel free to send a pull request.
 
-
-Licence
-=======
+# Licence
 
 MIT
